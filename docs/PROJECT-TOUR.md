@@ -6,8 +6,8 @@
 
 ## What This Is
 
-A **browser game development studio** powered by AI agents. Originally a port of
-[Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios),
+A **browser game development studio** powered by AI agents. Originally derived from
+an upstream multi-engine game studio template,
 we stripped the Godot/Unity/Unreal engine support and replaced it with
 **PixiJS v8 + TypeScript + Vite**, then added a **compiler-backed TypeScript
 agent infrastructure** — the novel part.
@@ -22,7 +22,7 @@ agent infrastructure** — the novel part.
 | **Language** | TypeScript 5.9.3, `strict: true` | Installed |
 | **Build** | Vite 6 + tsc | Installed |
 | **Testing** | Vitest 3 | Installed |
-| **Models** | DeepSeek V4 Pro (opus), DeepSeek V4 Flash (sonnet/haiku) | Go plan |
+| **Models** | DeepSeek V4 Pro (Pro), DeepSeek V4 Flash (Flash/Flash) | Go plan |
 | **Narrative Graph** | `@automagically/narrative-core` workspace package | Imported from Narrative Workbench |
 | **Physics** | Matter.js | Not installed (optional) |
 | **Audio** | Howler.js | Not installed (optional) |
@@ -33,14 +33,14 @@ agent infrastructure** — the novel part.
 
 Each agent is a markdown file with YAML frontmatter in `.opencode/agents/`.
 
-### Tier 1 — Directors (Opus)
+### Tier 1 — Directors (Pro)
 | Agent | Domain |
 |-------|--------|
 | `creative-director` | High-level vision, pillar conflicts, tone |
 | `technical-director` | Architecture decisions, tech stack, performance |
 | `producer` | Sprint planning, milestones, risk, coordination |
 
-### Tier 2 — Department Leads (Sonnet)
+### Tier 2 — Department Leads (Flash)
 | Agent | Domain |
 |-------|--------|
 | `game-designer` | Mechanics, systems, progression, economy |
@@ -52,33 +52,33 @@ Each agent is a markdown file with YAML frontmatter in `.opencode/agents/`.
 | `release-manager` | Build management, versioning, changelogs |
 | `localization-lead` | String externalization, translation pipeline |
 
-### Tier 3 — Specialists (Sonnet / Haiku)
+### Tier 3 — Specialists (Flash / Flash)
 | Agent | Model | Domain |
 |-------|-------|--------|
-| `gameplay-programmer` | Sonnet | Game mechanics, systems code |
-| `engine-programmer` | Sonnet | Core engine, rendering, physics |
-| `ai-programmer` | Sonnet | Behavior trees, pathfinding, NPC logic |
-| `pixijs-specialist` | Sonnet | **PixiJS v8 rendering, scene graph, shaders, perf** |
-| `network-programmer` | Sonnet | Netcode, replication, matchmaking |
-| `tools-programmer` | Sonnet | Editor extensions, pipeline tools |
-| `ui-programmer` | Sonnet | UI framework, screens, widgets, data binding |
-| `technical-artist` | Sonnet | Shaders, VFX, optimization, art pipeline |
-| `sound-designer` | Sonnet | SFX design, audio events, mixing |
-| `writer` | Sonnet | Dialogue, lore, item descriptions |
-| `world-builder` | Sonnet | World rules, factions, history |
-| `systems-designer` | Sonnet | Formula design, mechanic specs |
-| `level-designer` | Sonnet | Level layouts, pacing, encounters |
-| `economy-designer` | Sonnet | Resource economies, loot, progression |
-| `ux-designer` | Sonnet | User flows, wireframes, accessibility |
-| `prototyper` | Sonnet | Throwaway prototypes, feasibility testing |
-| `performance-analyst` | Sonnet | Profiling, optimization recommendations |
-| `qa-tester` | Haiku | Test cases, bug reports |
-| `devops-engineer` | Haiku | CI/CD, build scripts |
-| `analytics-engineer` | Sonnet | Event tracking, dashboards |
-| `security-engineer` | Sonnet | Anti-cheat, save encryption, network security |
-| `accessibility-specialist` | Haiku | WCAG, colorblind modes, remapping |
-| `live-ops-designer` | Sonnet | Seasons, events, battle passes |
-| `community-manager` | Haiku | Patch notes, player feedback |
+| `gameplay-programmer` | Flash | Game mechanics, systems code |
+| `engine-programmer` | Flash | Core engine, rendering, physics |
+| `ai-programmer` | Flash | Behavior trees, pathfinding, NPC logic |
+| `pixijs-specialist` | Flash | **PixiJS v8 rendering, scene graph, shaders, perf** |
+| `network-programmer` | Flash | Netcode, replication, matchmaking |
+| `tools-programmer` | Flash | Editor extensions, pipeline tools |
+| `ui-programmer` | Flash | UI framework, screens, widgets, data binding |
+| `technical-artist` | Flash | Shaders, VFX, optimization, art pipeline |
+| `sound-designer` | Flash | SFX design, audio events, mixing |
+| `writer` | Flash | Dialogue, lore, item descriptions |
+| `world-builder` | Flash | World rules, factions, history |
+| `systems-designer` | Flash | Formula design, mechanic specs |
+| `level-designer` | Flash | Level layouts, pacing, encounters |
+| `economy-designer` | Flash | Resource economies, loot, progression |
+| `ux-designer` | Flash | User flows, wireframes, accessibility |
+| `prototyper` | Flash | Throwaway prototypes, feasibility testing |
+| `performance-analyst` | Flash | Profiling, optimization recommendations |
+| `qa-tester` | Flash | Test cases, bug reports |
+| `devops-engineer` | Flash | CI/CD, build scripts |
+| `analytics-engineer` | Flash | Event tracking, dashboards |
+| `security-engineer` | Flash | Anti-cheat, save encryption, network security |
+| `accessibility-specialist` | Flash | WCAG, colorblind modes, remapping |
+| `live-ops-designer` | Flash | Seasons, events, battle passes |
+| `community-manager` | Flash | Patch notes, player feedback |
 
 ### Agents removed (15)
 All Godot (`godot-specialist`, `godot-gdscript-specialist`, `godot-csharp-specialist`,
@@ -243,7 +243,7 @@ navigation tasks and produces exact results.
 ```
 /
 ├── AGENTS.md                           # Master agent configuration
-├── CLAUDE.md                           # Claude/OpenCode root config
+├── GUIDE.md                           # Claude/OpenCode root config
 ├── opencode.json                       # OpenCode permissions, model tiers, instructions
 ├── README.md                           # Project README
 ├── MIGRATE-TO-PIXIJS.md                # Migration plan (reference)
@@ -378,3 +378,5 @@ Run `/narrative-validate design/game-graph.json` to validate and analyze.
 6. **No sprint plans** — `production/` has no sprint files
 
 To start: run `/brainstorm` or `/start` to define a game concept.
+
+

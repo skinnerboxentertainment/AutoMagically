@@ -3,7 +3,7 @@
 Indie game development managed through 35 coordinated OpenCode agents.
 Each agent owns a specific domain, enforcing separation of concerns and quality.
 
-This is a PixiJS v8 + TypeScript derivative of [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+This is a PixiJS v8 + TypeScript derivative of [OpenCode Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
 by Donchitos, adapted for OpenCode. Targeting the browser as the primary platform.
 
 ## Model Tier Configuration
@@ -11,24 +11,24 @@ by Donchitos, adapted for OpenCode. Targeting the browser as the primary platfor
 Configure your actual model IDs below. The tiers abstract agent assignments
 from concrete models so you can switch providers without editing 35 files.
 
-- **tier:opus** → `opencode-go/deepseek-v4-pro` — high-reasoning for planning, architecture, phase gates
-- **tier:sonnet** → `opencode-go/deepseek-v4-flash` — workhorse for implementation, code review, design authoring
-- **tier:haiku** → `opencode-go/deepseek-v4-flash` — cheap lookups, status checks, simple tasks
+- **opencode-go/deepseek-v4-pro** → `opencode-go/deepseek-v4-pro` — high-reasoning for planning, architecture, phase gates
+- **opencode-go/deepseek-v4-flash** → `opencode-go/deepseek-v4-flash` — workhorse for implementation, code review, design authoring
+- **opencode-go/deepseek-v4-flash** → `opencode-go/deepseek-v4-flash` — cheap lookups, status checks, simple tasks
 
 Set in `opencode.json`:
 ```json
 {
-  "model": "tier:opus",
-  "small_model": "tier:haiku"
+  "model": "opencode-go/deepseek-v4-pro",
+  "small_model": "opencode-go/deepseek-v4-flash"
 }
 ```
 
 ## Agents (35)
 
 Defined in `.opencode/agents/` as markdown files with YAML frontmatter.
-- **Tier 1 — Directors** (tier:opus): creative-director, technical-director, producer
-- **Tier 2 — Leads** (tier:sonnet): game-designer, lead-programmer, art-director, audio-director, narrative-director, qa-lead, release-manager, localization-lead
-- **Tier 3 — Specialists** (tier:sonnet/haiku): gameplay-programmer, engine-programmer, ai-programmer, pixijs-specialist, etc.
+- **Tier 1 — Directors** (opencode-go/deepseek-v4-pro): creative-director, technical-director, producer
+- **Tier 2 — Leads** (opencode-go/deepseek-v4-flash): game-designer, lead-programmer, art-director, audio-director, narrative-director, qa-lead, release-manager, localization-lead
+- **Tier 3 — Specialists** (opencode-go/deepseek-v4-flash/Flash): gameplay-programmer, engine-programmer, ai-programmer, pixijs-specialist, etc.
 
 Invoke agents with `@agent-name` in your message.
 
@@ -115,3 +115,4 @@ CCGS hooks are not directly supported in OpenCode. Instead:
 ## First Session?
 
 If the project has no engine configured and no game concept, type `/start` to begin.
+

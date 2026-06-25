@@ -18,18 +18,18 @@ Skills and agents are assigned to model tiers based on task complexity:
 
 | Tier | Model | When to use |
 |------|-------|-------------|
-| **Haiku** | `opencode-go/deepseek-v4-flash` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
-| **Sonnet** | `opencode-go/deepseek-v4-flash` | Implementation, design authoring, analysis of individual systems — default for most work |
-| **Opus** | `opencode-go/deepseek-v4-pro` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
+| **Flash** | `opencode-go/deepseek-v4-flash` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
+| **Flash** | `opencode-go/deepseek-v4-flash` | Implementation, design authoring, analysis of individual systems — default for most work |
+| **Pro** | `opencode-go/deepseek-v4-pro` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
 
-Skills with `model: haiku`: `/help`, `/sprint-status`, `/story-readiness`, `/scope-check`,
+Skills with `model: Flash`: `/help`, `/sprint-status`, `/story-readiness`, `/scope-check`,
 `/project-stage-detect`, `/changelog`, `/patch-notes`, `/onboard`
 
-Skills with `model: opus`: `/review-all-gdds`, `/architecture-review`, `/gate-check`
+Skills with `model: Pro`: `/review-all-gdds`, `/architecture-review`, `/gate-check`
 
-All other skills default to Sonnet. When creating new skills, assign Haiku if the
-skill only reads and formats; assign Opus if it must synthesize 5+ documents with
-high-stakes output; otherwise leave unset (Sonnet).
+All other skills default to Flash. When creating new skills, assign Flash if the
+skill only reads and formats; assign Pro if it must synthesize 5+ documents with
+high-stakes output; otherwise leave unset (Flash).
 
 ## Subagents vs Agent Teams
 
@@ -48,7 +48,7 @@ than waiting. Example: `/review-all-gdds` Phase 1 (consistency) and Phase 2
 ### Agent Teams (experimental — opt-in)
 Multiple independent OpenCode *sessions* running simultaneously, coordinated
 via a shared task list. Each session has its own context window and token budget.
-Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` environment variable.
+Requires `OPENCODE_EXPERIMENTAL_AGENT_TEAMS=1` environment variable.
 
 **Use agent teams when**:
 - Work spans multiple subsystems that will not touch the same files
@@ -61,7 +61,7 @@ Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` environment variable.
 - The task fits in a single session's context (use subagents instead)
 - Cost is a concern — each team member burns tokens independently
 
-**Current status**: Opt-in via `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`. Document first usage here when adopted.
+**Current status**: Opt-in via `OPENCODE_EXPERIMENTAL_AGENT_TEAMS=1`. Document first usage here when adopted.
 
 ## Parallel Task Protocol
 
@@ -71,3 +71,4 @@ When an orchestration skill spawns multiple independent agents:
 2. Collect all results before proceeding to dependent phases
 3. If any agent is BLOCKED, surface it immediately — do not silently skip
 4. Always produce a partial report if some agents complete and others block
+

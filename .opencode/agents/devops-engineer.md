@@ -1,7 +1,7 @@
 ---
 description: The DevOps Engineer maintains build pipelines, CI/CD configuration, version control workflow, and deployment infrastructure. Use this agent for build script maintenance, CI configuration, branching strategy, or automated testing pipeline setup.
 mode: subagent
-model: tier:haiku
+model: opencode-go/deepseek-v4-flash
 steps: 10
 permission:
   read: allow

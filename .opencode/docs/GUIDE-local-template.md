@@ -1,14 +1,14 @@
-# CLAUDE.local.md Template
+# GUIDE.local.md Template
 
-Copy this file to the project root as `CLAUDE.local.md` for personal overrides.
+Copy this file to the project root as `GUIDE.local.md` for personal overrides.
 This file is gitignored and will not be committed.
 
 ```markdown
 # Personal Preferences
 
 ## Model Preferences
-- Prefer Opus for complex design tasks
-- Use Haiku for quick lookups and simple edits
+- Prefer deepseek-v4-pro for complex design tasks
+- Use deepseek-v4-flash for quick lookups and simple edits
 
 ## Workflow Preferences
 - Always run tests after code changes
@@ -32,6 +32,6 @@ This file is gitignored and will not be committed.
 
 ## Setup
 
-1. Copy this template to your project root: `cp .opencode/docs/CLAUDE-local-template.md CLAUDE.local.md`
+1. Copy this template to your project root: `cp .opencode/docs/GUIDE-local-template.md GUIDE.local.md`
 2. Edit to match your preferences
-3. Verify `CLAUDE.local.md` is in `.gitignore` (OpenCode reads it from the project root)
+3. Verify `GUIDE.local.md` is in `.gitignore` (OpenCode reads it from the project root)

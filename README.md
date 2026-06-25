@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">OpenCode PixiJS Game Studio</h1>
   <p align="center">
-    <em>PixiJS v8 + TypeScript derivative of <a href="https://github.com/Donchitos/Claude-Code-Game-Studios">Claude Code Game Studios</a></em>
+    <em>PixiJS v8 + TypeScript AI game development studio for OpenCode</em>
     <br />
     Turn a single OpenCode session into a browser game development studio.
     <br />
@@ -15,7 +15,7 @@
   <a href=".opencode/commands"><img src="https://img.shields.io/badge/commands-73-green" alt="73 Commands"></a>
   <a href=".opencode/rules"><img src="https://img.shields.io/badge/rules-12-red" alt="12 Rules"></a>
   <a href="https://opencode.ai"><img src="https://img.shields.io/badge/built%20for-OpenCode-f5f5f5" alt="Built for OpenCode"></a>
-  <a href="https://github.com/Donchitos/Claude-Code-Game-Studios"><img src="https://img.shields.io/badge/original-CCGS-blue" alt="Original: CCGS"></a>
+  <a href="https://opencode.ai"><img src="https://img.shields.io/badge/built%20for-OpenCode-blue" alt="Built for OpenCode"></a>
 </p>
 
 ---
@@ -28,9 +28,9 @@ Building a game solo with AI is powerful — but a single chat session has no st
 
 The result: you still make every decision, but now you have a team that asks the right questions, catches mistakes early, and keeps your project organized from first brainstorm to launch.
 
-> This is a PixiJS v8 + TypeScript derivative of [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) (CCGS) by Donchitos, adapted from `.claude/` to `.opencode/` format. All credit for the original architecture, agents, skills, and design goes to the CCGS project.
-
 ---
+
+https://opencode.ai
 
 ## Table of Contents
 
@@ -64,15 +64,15 @@ The result: you still make every decision, but now you have a team that asks the
 Agents are organized into three tiers, matching how real studios operate:
 
 ```
-Tier 1 — Directors (Opus)
+Tier 1 — Directors (Pro)
   creative-director    technical-director    producer
 
-Tier 2 — Department Leads (Sonnet)
+Tier 2 — Department Leads (Flash)
   game-designer        lead-programmer       art-director
   audio-director       narrative-director    qa-lead
   release-manager      localization-lead
 
-Tier 3 — Specialists (Sonnet/Haiku)
+Tier 3 — Specialists (Flash/Flash)
   gameplay-programmer  engine-programmer     ai-programmer
   network-programmer   tools-programmer      ui-programmer
   systems-designer     level-designer        economy-designer
@@ -267,14 +267,14 @@ Primary development and testing on **Windows 11** with PowerShell 7+. OpenCode i
 
 ## Community
 
-- **Discussions** — [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) for questions, ideas, and showcasing what you've built
-- **Issues** — [Bug reports and feature requests](https://github.com/Donchitos/Claude-Code-Game-Studios/issues)
+- **Discussions** — [GitHub Discussions](https://github.com/skinnerboxentertainment/AutoMagically/discussions) for questions, ideas, and showcasing what you've built
+- **Issues** — [Bug reports and feature requests](https://github.com/skinnerboxentertainment/AutoMagically/issues)
 
 ---
 
 ## Supporting This Project
 
-Claude Code Game Studios is free and open source. If it saves you time or helps you ship your game, consider supporting continued development:
+OpenCode PixiJS Game Studio is free and open source. If it saves you time or helps you ship your game, consider supporting continued development:
 
 <p>
   <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
@@ -285,12 +285,15 @@ Claude Code Game Studios is free and open source. If it saves you time or helps 
 - **[Buy Me a Coffee](https://www.buymeacoffee.com/donchitos3)** — one-time support
 - **[GitHub Sponsors](https://github.com/sponsors/Donchitos)** — recurring support through GitHub
 
-Sponsorships help fund time spent maintaining skills, adding new agents, keeping up with Claude Code and engine API changes, and responding to community issues.
+Sponsorships help fund time spent maintaining skills, adding new agents, keeping up with OpenCode and engine API changes, and responding to community issues.
 
 ---
 
-*PixiJS Game Studio derivative of [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) by Donchitos. Built for OpenCode.*
+*Built for [OpenCode](https://opencode.ai).*
 
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
+
+

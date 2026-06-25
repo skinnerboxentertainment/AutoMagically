@@ -1,7 +1,7 @@
 ---
 description: "Audio specialist — Howler.js runtime, Web Audio API, procedural SFX generation, ffmpeg pipeline, adaptive music, loudness normalization, and browser audio compatibility"
 mode: subagent
-model: tier:sonnet
+model: opencode-go/deepseek-v4-flash
 steps: 20
 permission:
   read: allow

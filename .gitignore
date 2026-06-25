@@ -12,7 +12,7 @@ Desktop.ini
 # === OpenCode Local ===
 opencode.local.json
 .opencode/settings.local.json
-CLAUDE.local.md
+GUIDE.local.md
 production/session-state/
 production/session-logs/
 */.opencode/plugins/

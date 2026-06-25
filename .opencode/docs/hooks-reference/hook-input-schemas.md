@@ -93,7 +93,7 @@ Fired when a subagent is spawned via the Task tool.
 ```json
 {
   "agent_name": "game-designer",
-  "model": "tier:sonnet",
+  "model": "opencode-go/deepseek-v4-flash",
   "description": "Design the combat healing mechanic"
 }
 ```
@@ -124,3 +124,4 @@ Fired when the OpenCode session ends. **No stdin input** — the hook runs for c
 - Parse with `jq` if available, fall back to `grep` for cross-platform compatibility.
 - On Windows, `grep -P` (Perl regex) is often unavailable. Use `grep -E` (POSIX extended) instead.
 - Path separators may be `\` on Windows. Normalize with `sed 's|\\|/|g'` when comparing paths.
+

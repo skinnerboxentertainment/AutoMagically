@@ -17,16 +17,16 @@ Flow State, Bartle Player Types). Use whichever engine set matches your project.
 
 There are three tiers of agents:
 
-- **Tier 1 (Opus)**: Directors who make high-level decisions
+- **Tier 1 (Pro)**: Directors who make high-level decisions
   - `creative-director` -- vision and creative conflict resolution
   - `technical-director` -- architecture and technology decisions
   - `producer` -- scheduling, coordination, and risk management
 
-- **Tier 2 (Sonnet)**: Department leads who own their domain
+- **Tier 2 (Flash)**: Department leads who own their domain
   - `game-designer`, `lead-programmer`, `art-director`, `audio-director`,
     `narrative-director`, `qa-lead`, `release-manager`, `localization-lead`
 
-- **Tier 3 (Sonnet/Haiku)**: Specialists who execute within their domain
+- **Tier 3 (Flash/Flash)**: Specialists who execute within their domain
   - Designers, programmers, artists, writers, testers, engineers
 
 ### 2. Pick the Right Agent for the Job
@@ -217,7 +217,7 @@ If you already know what you need, jump directly to the relevant path:
    - Generates 3 concepts, helps you pick one, defines core loop and pillars
    - Produces a game concept document and recommends an engine
 2. **Set up the engine** — Run `/setup-engine` (uses the brainstorm recommendation)
-   - Configures CLAUDE.md, detects knowledge gaps, populates reference docs
+   - Configures GUIDE.md, detects knowledge gaps, populates reference docs
    - Creates `.opencode/docs/technical-preferences.md` with naming conventions,
      performance budgets, and engine-specific defaults
    - If the engine version is newer than the LLM's training data, it fetches
@@ -270,7 +270,7 @@ If you have design docs, prototypes, or code already:
 ## File Structure Reference
 
 ```
-CLAUDE.md                          -- Master config (read this first, ~60 lines)
+GUIDE.md                          -- Master config (read this first, ~60 lines)
 .opencode/
   settings.json                    -- OpenCode hooks and project settings
   agents/                          -- 35 agent definitions (YAML frontmatter)
@@ -289,3 +289,5 @@ CLAUDE.md                          -- Master config (read this first, ~60 lines)
     settings-local-template.md     -- Personal settings.local.json guide
     templates/                     -- 41 document templates
 ```
+
+

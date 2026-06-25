@@ -3,7 +3,7 @@ name: typescript-patterns
 description: "TypeScript strict-mode patterns, type safety conventions, and compiler-backed code review for PixiJS game development. Load this when writing or reviewing TypeScript code."
 argument-hint: "[review | lint | refactor]"
 allowed-tools: Read, Glob, Grep, Write, Edit, Bash, Task
-model: sonnet
+model: opencode-go/deepseek-v4-flash
 ---
 
 When this skill is invoked:

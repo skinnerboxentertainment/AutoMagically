@@ -1,6 +1,6 @@
-# Contributing to Claude Code Game Studios
+# Contributing to OpenCode Game Studios
 
-CCGS is a coordination framework for indie game development using Claude Code.
+CCGS is a coordination framework for indie game development using OpenCode.
 Contributions are welcome — bug fixes, new skills that fill a real gap, agent
 improvements, and hook fixes. PRs that don't fit the framework's direction will
 be closed without lengthy explanation.
@@ -25,12 +25,12 @@ merged here — keep those in your own repo.
 These are the things that will get your PR rejected if you miss them.
 
 **Skill files**
-- Skills live in `.claude/skills/<name>/SKILL.md` — the subdirectory format is
-  required. Flat `.md` files are silently ignored by Claude Code.
+- Skills live in `.OpenCode/skills/<name>/SKILL.md` — the subdirectory format is
+  required. Flat `.md` files are silently ignored by OpenCode.
 - SKILL.md must include YAML frontmatter: `name`, `description`,
   `argument-hint`, `allowed-tools`, and `model`
-- Model tier: `haiku` for read-only status checks, `opus` for multi-document
-  synthesis and phase gates, `sonnet` for everything else
+- model: `opencode-go/deepseek-v4-flash` for read-only status checks, `opencode-go/deepseek-v4-pro` for multi-document
+  synthesis and phase gates, `opencode-go/deepseek-v4-flash` for everything else
 
 **Hooks**
 - Use `grep -E` — never `grep -P` (Perl regex breaks on Windows Git Bash)
@@ -61,7 +61,7 @@ or writing files unilaterally, it won't be merged.
 
 ## Testing Your Changes
 
-Run it in a Claude Code session and confirm it works end-to-end. For skills,
+Run it in a OpenCode session and confirm it works end-to-end. For skills,
 invoke the skill and verify the output matches what the skill claims to do.
 For hooks, trigger the relevant event and confirm the hook fires correctly
 and exits cleanly.
@@ -93,3 +93,5 @@ Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`
 CCGS must work on Windows (Git Bash), macOS, and Linux. If your hook or
 script uses anything platform-specific, it will be rejected. When in doubt,
 test on Windows.
+
+

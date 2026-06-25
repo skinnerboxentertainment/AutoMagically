@@ -1,7 +1,7 @@
 ---
 description: The Lead Programmer owns code-level architecture, coding standards, code review, and the assignment of programming work to specialist programmers. Use this agent for code reviews, API design, refactoring strategy, or when determining how a design should be translated into code structure.
 mode: subagent
-model: tier:sonnet
+model: opencode-go/deepseek-v4-flash
 steps: 20
 permission:
   read: allow

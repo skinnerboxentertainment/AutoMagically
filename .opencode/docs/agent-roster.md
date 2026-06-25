@@ -5,14 +5,14 @@ The following agents are available. Each has a dedicated definition file in
 spans multiple domains, the coordinating agent (usually `producer` or the
 domain lead) should delegate to specialists.
 
-## Tier 1 -- Leadership Agents (Opus)
+## Tier 1 -- Leadership Agents (Pro)
 | Agent | Domain | When to Use |
 |-------|--------|-------------|
 | `creative-director` | High-level vision | Major creative decisions, pillar conflicts, tone/direction |
 | `technical-director` | Technical vision | Architecture decisions, tech stack choices, performance strategy |
 | `producer` | Production management | Sprint planning, milestone tracking, risk management, coordination |
 
-## Tier 2 -- Department Lead Agents (Sonnet)
+## Tier 2 -- Department Lead Agents (Flash)
 | Agent | Domain | When to Use |
 |-------|--------|-------------|
 | `game-designer` | Game design | Mechanics, systems, progression, economy, balancing |
@@ -24,35 +24,37 @@ domain lead) should delegate to specialists.
 | `release-manager` | Release pipeline | Build management, versioning, changelogs, deployment, rollbacks |
 | `localization-lead` | Internationalization | String externalization, translation pipeline, locale testing |
 
-## Tier 3 -- Specialist Agents (Sonnet or Haiku)
+## Tier 3 -- Specialist Agents (Flash or Flash)
 | Agent | Domain | Model | When to Use |
 |-------|--------|-------|-------------|
-| `systems-designer` | Systems design | Sonnet | Specific mechanic implementation, formula design, loops |
-| `level-designer` | Level design | Sonnet | Level layouts, pacing, encounter design, flow |
-| `economy-designer` | Economy/balance | Sonnet | Resource economies, loot tables, progression curves |
-| `gameplay-programmer` | Gameplay code | Sonnet | Feature implementation, gameplay systems code |
-| `engine-programmer` | Engine systems | Sonnet | Core engine, rendering, physics, memory management |
-| `ai-programmer` | AI systems | Sonnet | Behavior trees, pathfinding, NPC logic, state machines |
-| `network-programmer` | Networking | Sonnet | Netcode, replication, lag compensation, matchmaking |
-| `tools-programmer` | Dev tools | Sonnet | Editor extensions, pipeline tools, debug utilities |
-| `ui-programmer` | UI implementation | Sonnet | UI framework, screens, widgets, data binding |
-| `technical-artist` | Tech art | Sonnet | Shaders, VFX, optimization, art pipeline tools |
-| `sound-designer` | Sound design | Sonnet | SFX design docs, audio event lists, mixing notes |
-| `writer` | Dialogue/lore | Sonnet | Dialogue writing, lore entries, item descriptions |
-| `world-builder` | World/lore design | Sonnet | World rules, faction design, history, geography |
-| `qa-tester` | Test execution | Haiku | Writing test cases, bug reports, test checklists |
-| `performance-analyst` | Performance | Sonnet | Profiling, optimization recs, memory analysis |
-| `devops-engineer` | Build/deploy | Haiku | CI/CD, build scripts, version control workflow |
-| `analytics-engineer` | Telemetry | Sonnet | Event tracking, dashboards, A/B test design |
-| `ux-designer` | UX flows | Sonnet | User flows, wireframes, accessibility, input handling |
-| `prototyper` | Rapid prototyping | Sonnet | Throwaway prototypes, mechanic testing, feasibility validation |
-| `security-engineer` | Security | Sonnet | Anti-cheat, exploit prevention, save encryption, network security |
-| `accessibility-specialist` | Accessibility | Haiku | WCAG compliance, colorblind modes, remapping, text scaling |
-| `live-ops-designer` | Live operations | Sonnet | Seasons, events, battle passes, retention, live economy |
-| `community-manager` | Community | Haiku | Patch notes, player feedback, crisis comms, community health |
+| `systems-designer` | Systems design | Flash | Specific mechanic implementation, formula design, loops |
+| `level-designer` | Level design | Flash | Level layouts, pacing, encounter design, flow |
+| `economy-designer` | Economy/balance | Flash | Resource economies, loot tables, progression curves |
+| `gameplay-programmer` | Gameplay code | Flash | Feature implementation, gameplay systems code |
+| `engine-programmer` | Engine systems | Flash | Core engine, rendering, physics, memory management |
+| `ai-programmer` | AI systems | Flash | Behavior trees, pathfinding, NPC logic, state machines |
+| `network-programmer` | Networking | Flash | Netcode, replication, lag compensation, matchmaking |
+| `tools-programmer` | Dev tools | Flash | Editor extensions, pipeline tools, debug utilities |
+| `ui-programmer` | UI implementation | Flash | UI framework, screens, widgets, data binding |
+| `technical-artist` | Tech art | Flash | Shaders, VFX, optimization, art pipeline tools |
+| `sound-designer` | Sound design | Flash | SFX design docs, audio event lists, mixing notes |
+| `writer` | Dialogue/lore | Flash | Dialogue writing, lore entries, item descriptions |
+| `world-builder` | World/lore design | Flash | World rules, faction design, history, geography |
+| `qa-tester` | Test execution | Flash | Writing test cases, bug reports, test checklists |
+| `performance-analyst` | Performance | Flash | Profiling, optimization recs, memory analysis |
+| `devops-engineer` | Build/deploy | Flash | CI/CD, build scripts, version control workflow |
+| `analytics-engineer` | Telemetry | Flash | Event tracking, dashboards, A/B test design |
+| `ux-designer` | UX flows | Flash | User flows, wireframes, accessibility, input handling |
+| `prototyper` | Rapid prototyping | Flash | Throwaway prototypes, mechanic testing, feasibility validation |
+| `security-engineer` | Security | Flash | Anti-cheat, exploit prevention, save encryption, network security |
+| `accessibility-specialist` | Accessibility | Flash | WCAG compliance, colorblind modes, remapping, text scaling |
+| `live-ops-designer` | Live operations | Flash | Seasons, events, battle passes, retention, live economy |
+| `community-manager` | Community | Flash | Patch notes, player feedback, crisis comms, community health |
 
 ## PixiJS Specialist
 
 | Agent | Domain | Model | When to Use |
 | ---- | ---- | ---- | ---- |
-| `pixijs-specialist` | PixiJS v8 rendering | Sonnet | Scene graph, sprites, graphics, shaders, performance, WebGL/WebGPU |
+| `pixijs-specialist` | PixiJS v8 rendering | Flash | Scene graph, sprites, graphics, shaders, performance, WebGL/WebGPU |
+
+

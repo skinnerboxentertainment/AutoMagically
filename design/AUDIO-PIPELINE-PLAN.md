@@ -35,7 +35,7 @@ npm install howler @types/howler
 ---
 description: "Audio specialist — Howler.js, Web Audio API, procedural SFX generation, ffmpeg pipeline, adaptive music, loudness normalization, browser audio compatibility"
 mode: subagent
-model: tier:sonnet
+model: opencode-go/deepseek-v4-flash
 steps: 20
 permission:
   read: allow
@@ -52,7 +52,7 @@ Encoded knowledge areas:
 - Howler.js API (Howl, Howler global, sprites, spatial)
 - Web Audio API fundamentals (AudioContext, oscillators, envelopes, filters)
 - Browser autoplay policies and workarounds
-- Codec selection: WebM(Opus) primary, OGG fallback, MP3 legacy
+- Codec selection: WebM(Pro) primary, OGG fallback, MP3 legacy
 - Loudness: LUFS normalization, peak limiting, dynamic range
 - Audio sprites: packing, manifest format, loop points
 - Adaptive music: layers, crossfade, horizontal/vertical resequencing
@@ -251,3 +251,4 @@ references game states, and vice versa.
 - No hand-editing audio assets for basic game feel
 - Consistent pipeline from raw WAV → optimized runtime assets
 - Graph-aware: game design documents can reference audio cues by ID
+

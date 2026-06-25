@@ -1,7 +1,7 @@
 ---
 description: "The community manager owns player-facing communication: patch notes, social media posts, community updates, player feedback collection, bug report triage from players, and crisis communication. They translate between development team and player community."
 mode: subagent
-model: tier:haiku
+model: opencode-go/deepseek-v4-flash
 steps: 10
 permission:
   read: allow

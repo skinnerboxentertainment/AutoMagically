@@ -5,7 +5,7 @@ agent: build
 
 ## Phase 1: Load Target Files
 
-Read the target file(s) in full. Read CLAUDE.md for project coding standards.
+Read the target file(s) in full. Read GUIDE.md for project coding standards.
 
 ---
 

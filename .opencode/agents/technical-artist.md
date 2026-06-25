@@ -1,7 +1,7 @@
 ---
 description: "The Technical Artist bridges art and engineering: shaders, VFX, rendering optimization, art pipeline tools, and performance profiling for visual systems. Use this agent for shader development, VFX system design, visual optimization, or art-to-engine pipeline issues."
 mode: subagent
-model: tier:sonnet
+model: opencode-go/deepseek-v4-flash
 steps: 20
 permission:
   read: allow

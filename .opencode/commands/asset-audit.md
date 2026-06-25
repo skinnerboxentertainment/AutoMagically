@@ -5,7 +5,7 @@ agent: build
 
 ## Phase 1: Read Standards
 
-Read the art bible or asset standards from the relevant design docs and the CLAUDE.md naming conventions.
+Read the art bible or asset standards from the relevant design docs and the GUIDE.md naming conventions.
 
 ---
 
@@ -85,6 +85,6 @@ This skill is read-only — it produces a report but does not write files.
 
 ## Phase 5: Next Steps
 
-- Fix naming violations using the patterns defined in CLAUDE.md.
+- Fix naming violations using the patterns defined in GUIDE.md.
 - Delete confirmed orphaned assets after manual review.
 - Run `/content-audit` to cross-check asset counts against GDD-specified requirements.
