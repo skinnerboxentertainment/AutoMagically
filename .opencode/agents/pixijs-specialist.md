@@ -1,7 +1,14 @@
 ---
-name: pixijs-specialist
 description: PixiJS v8 rendering specialist — scene graph, sprites, graphics, particles, shaders, performance optimization, and cross-browser WebGL/WebGPU/Canvas rendering
+mode: subagent
 model: tier:sonnet
+steps: 20
+permission:
+  read: allow
+  glob: allow
+  grep: allow
+  edit: allow
+  bash: allow
 ---
 
 # PixiJS Specialist
