@@ -2,7 +2,7 @@
 
 ## What Is This?
 
-This is a complete Claude Code agent architecture for game development. It
+This is a complete OpenCode agent architecture for game development. It
 organizes 49 specialized AI agents into a studio hierarchy that mirrors
 real game development teams, with defined responsibilities, delegation
 rules, and coordination protocols. It includes engine-specialist agents
@@ -272,8 +272,8 @@ If you have design docs, prototypes, or code already:
 ```
 CLAUDE.md                          -- Master config (read this first, ~60 lines)
 .opencode/
-  settings.json                    -- Claude Code hooks and project settings
-  agents/                          -- 49 agent definitions (YAML frontmatter)
+  settings.json                    -- OpenCode hooks and project settings
+  agents/                          -- 35 agent definitions (YAML frontmatter)
   skills/                          -- 73 slash command definitions (YAML frontmatter)
   hooks/                           -- 12 hook scripts (.sh) wired by settings.json
   rules/                           -- 11 path-specific rule files

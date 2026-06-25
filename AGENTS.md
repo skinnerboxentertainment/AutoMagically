@@ -11,9 +11,9 @@ by Donchitos, adapted for OpenCode. Targeting the browser as the primary platfor
 Configure your actual model IDs below. The tiers abstract agent assignments
 from concrete models so you can switch providers without editing 35 files.
 
-- **tier:opus** → `anthropic/claude-opus-4-5` (or `openai/gpt-5-codex`, etc.)
-- **tier:sonnet** → `anthropic/claude-sonnet-4-5` (or `openai/gpt-5`, etc.)
-- **tier:haiku** → `anthropic/claude-haiku-4-5` (or `openai/gpt-5-mini`, etc.)
+- **tier:opus** → `opencode-go/deepseek-v4-pro` — high-reasoning for planning, architecture, phase gates
+- **tier:sonnet** → `opencode-go/deepseek-v4-flash` — workhorse for implementation, code review, design authoring
+- **tier:haiku** → `opencode-go/deepseek-v4-flash` — cheap lookups, status checks, simple tasks
 
 Set in `opencode.json`:
 ```json

@@ -18,9 +18,9 @@ Skills and agents are assigned to model tiers based on task complexity:
 
 | Tier | Model | When to use |
 |------|-------|-------------|
-| **Haiku** | `claude-haiku-4-5-20251001` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
-| **Sonnet** | `claude-sonnet-4-6` | Implementation, design authoring, analysis of individual systems — default for most work |
-| **Opus** | `claude-opus-4-6` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
+| **Haiku** | `opencode-go/deepseek-v4-flash` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
+| **Sonnet** | `opencode-go/deepseek-v4-flash` | Implementation, design authoring, analysis of individual systems — default for most work |
+| **Opus** | `opencode-go/deepseek-v4-pro` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
 
 Skills with `model: haiku`: `/help`, `/sprint-status`, `/story-readiness`, `/scope-check`,
 `/project-stage-detect`, `/changelog`, `/patch-notes`, `/onboard`
@@ -36,7 +36,7 @@ high-stakes output; otherwise leave unset (Sonnet).
 This project uses two distinct multi-agent patterns:
 
 ### Subagents (current, always active)
-Spawned via `Task` within a single Claude Code session. Used by all `team-*` skills
+Spawned via `Task` within a single OpenCode session. Used by all `team-*` skills
 and orchestration skills. Subagents share the session's permission context, run
 sequentially or in parallel within the session, and return results to the parent.
 
@@ -46,7 +46,7 @@ than waiting. Example: `/review-all-gdds` Phase 1 (consistency) and Phase 2
 (design theory) are independent — spawn both at the same time.
 
 ### Agent Teams (experimental — opt-in)
-Multiple independent Claude Code *sessions* running simultaneously, coordinated
+Multiple independent OpenCode *sessions* running simultaneously, coordinated
 via a shared task list. Each session has its own context window and token budget.
 Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` environment variable.
 
